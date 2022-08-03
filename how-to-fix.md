@@ -1,15 +1,24 @@
-ho to fix
+# conf error
 
-# no credentials 
+## no credentials 
 
-add
+Надо зайти в firebase console и в коллекцию с соответствующим имененм хоста добавить документ с id `!access` 
 
-# credentials not valid
+Содержимое документа:
+```
+login : yourLogin
+password : yourPassword
+```
 
-update
+## credentials are not valid
 
+Имеющиеся в документе `!access` логин и пароль видимо не валидные. Надо их поменять на актуальные. 
 
-# thrown error
+## Другие ошибки
 
-r&d
+Надо анализировать проблему и устранять ее причину.
+
+# Перезапуск
+
+Надо зайти в документ и в поле `!report` добавить `forceRetry:true` и сохранить изменения. Скрипт перезапустится.
 
