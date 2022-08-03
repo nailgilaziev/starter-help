@@ -20,5 +20,7 @@ password : yourPassword
 
 # Перезапуск
 
-Надо зайти в документ и в поле `!report` добавить `forceRetry:true` и сохранить изменения. Скрипт перезапустится.
+Надо отправить POST запрос чтобы перезапустить процессинг
+
+`https://us-central1-am-starter.cloudfunctions.net/restartProcessing?host=YOUR_HOST&docId=YOUR_DOC_ID`
 
